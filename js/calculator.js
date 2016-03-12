@@ -10,6 +10,12 @@ var calculatorModule = (function(){
     }
   }
 //Begin Functions
+
+//   document.getElementById("doubleZero").addEventListener('click', function(){
+
+//     setDisplay(newDisplay);
+// });
+
 function load(x) {
     isNum(x);
     _total = x;
@@ -69,5 +75,24 @@ return {
    };
 });
 
+module.exports = getTotal;
+module.exports = add;
+module.exports = subtract;
+module.exports = multiply;
+module.exports = divide;
+module.exports = recallMemory;
+module.exports = saveMemory;
+module.exports = clearMemory;
+module.exports = resetMemory;
+
+
+
+
+
+
+
+
+
+
+
 // console.log(calc._________(x)); to execute function
-console.log(calc.clearMemory());
