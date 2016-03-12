@@ -1,29 +1,3 @@
-
-
-// [________________] <-----( display )
-
-// [7] [8]  [9]   [÷]  [clear]
-// [4] [5]  [6]   [×]  [get balance]
-// [1] [2]  [3]   [-]  [deposit cash]
-// [0] [00] [.]   [+]  [withdraw cash]
-//                [=]
-
-
-// var one = 1;
-// var two = 2;
-// var three = 3;
-// var four = 4;
-// var five = 5;
-// var six = 6;
-// var seven = 7;
-// var eight = 8;
-// var nine = 9;
-// var zero = 0;
-// var doubleZero = 00;
-// var dot;  // CONCATINATION OF ARRAY
-
-
-
 //<div id="Number" src=""></div>
 
 // document.getElementById( ~ * ~ * ~ * ~).innerText = " ~ * ARRAY OF WHATEVER * ~ ";
@@ -45,107 +19,244 @@
     //var twoPlacedFloat = parseFloat(yourString).toFixed(2)
 
 
+// function numTaker(){
+//       parseFloat(numString);
+//       numArray.push(numString);
+//       console.log(numArray);
+//       newDisplay = numArray.join('');
+//       setDisplay(newDisplay);
+//   }
 
-var total = 0;
-var newDisplay; //Array then parse?
+
+
+
+
+var newDisplay = 0;
 var numArray = [];
+var numArray2 = [];
 
 function setDisplay(newDisplay){
   document.getElementById("display").innerHTML = newDisplay;
 }
 
 function init(){
+  var newDisplay = 0;
+  var numArray = [];
 
   document.getElementById("one").addEventListener('click', function(){
     var numString = this.innerText;
-    parseFloat(numString);
-    numArray.push(numString);
-    console.log(numArray);
-    newDisplay = numArray.join('');
-    setDisplay(newDisplay);
+    if (typeof numArray === 'number'){
+      parseFloat(numString);
+      numArray2.push(numString);
+      console.log(numArray2);
+      newDisplay = numArray2.join('');
+      setDisplay(newDisplay);
+      console.log(numArray2);
+      console.log(numArray);
+    }
+    else{
+      parseFloat(numString);
+      numArray.push(numString);
+      console.log(numArray);
+      newDisplay = numArray.join('');
+      setDisplay(newDisplay);
+}
   });
   document.getElementById("two").addEventListener('click', function(){
-  var numString = this.innerText;
-    parseFloat(numString);
-    numArray.push(numString);
-    console.log(numArray);
-    newDisplay = numArray.join('');
-    setDisplay(newDisplay);
+    var numString = this.innerText;
+    if (typeof numArray === 'number'){
+      parseFloat(numString);
+      numArray2.push(numString);
+      console.log(numArray2);
+      newDisplay = numArray2.join('');
+      setDisplay(newDisplay);
+      console.log(numArray2);
+      console.log(numArray);
+    }
+    else{
+      parseFloat(numString);
+      numArray.push(numString);
+      console.log(numArray);
+      newDisplay = numArray.join('');
+      setDisplay(newDisplay);
+}
   });
   document.getElementById("three").addEventListener('click', function(){
-  var numString = this.innerText;
-    parseFloat(numString);
-    numArray.push(numString);
-    console.log(numArray);
-    newDisplay = numArray.join('');
-    setDisplay(newDisplay);
+    var numString = this.innerText;
+    if (typeof numArray === 'number'){
+      parseFloat(numString);
+      numArray2.push(numString);
+      console.log(numArray2);
+      newDisplay = numArray2.join('');
+      setDisplay(newDisplay);
+      console.log(numArray2);
+      console.log(numArray);
+    }
+    else{
+      parseFloat(numString);
+      numArray.push(numString);
+      console.log(numArray);
+      newDisplay = numArray.join('');
+      setDisplay(newDisplay);
+}
   });
   document.getElementById("four").addEventListener('click', function(){
-  var numString = this.innerText;
-    parseFloat(numString);
-    numArray.push(numString);
-    console.log(numArray);
-    newDisplay = numArray.join('');
-    setDisplay(newDisplay);
+    var numString = this.innerText;
+    if (typeof numArray === 'number'){
+      parseFloat(numString);
+      numArray2.push(numString);
+      console.log(numArray2);
+      newDisplay = numArray2.join('');
+      setDisplay(newDisplay);
+      console.log(numArray2);
+      console.log(numArray);
+    }
+    else{
+      parseFloat(numString);
+      numArray.push(numString);
+      console.log(numArray);
+      newDisplay = numArray.join('');
+      setDisplay(newDisplay);
+}
   });
   document.getElementById("five").addEventListener('click', function(){
-  var numString = this.innerText;
-    parseFloat(numString);
-    numArray.push(numString);
-    console.log(numArray);
-    newDisplay = numArray.join('');
-    setDisplay(newDisplay);
+    var numString = this.innerText;
+    if (typeof numArray === 'number'){
+      parseFloat(numString);
+      numArray2.push(numString);
+      console.log(numArray2);
+      newDisplay = numArray2.join('');
+      setDisplay(newDisplay);
+      console.log(numArray2);
+      console.log(numArray);
+    }
+    else{
+      parseFloat(numString);
+      numArray.push(numString);
+      console.log(numArray);
+      newDisplay = numArray.join('');
+      setDisplay(newDisplay);
+}
   });
   document.getElementById("six").addEventListener('click', function(){
-  var numString = this.innerText;
-    parseFloat(numString);
-    numArray.push(numString);
-    console.log(numArray);
-    newDisplay = numArray.join('');
-    setDisplay(newDisplay);
+    var numString = this.innerText;
+    if (typeof numArray === 'number'){
+      parseFloat(numString);
+      numArray2.push(numString);
+      console.log(numArray2);
+      newDisplay = numArray2.join('');
+      setDisplay(newDisplay);
+      console.log(numArray2);
+      console.log(numArray);
+    }
+    else{
+      parseFloat(numString);
+      numArray.push(numString);
+      console.log(numArray);
+      newDisplay = numArray.join('');
+      setDisplay(newDisplay);
+}
   });
   document.getElementById("seven").addEventListener('click', function(){
-  var numString = this.innerText;
-    parseFloat(numString);
-    numArray.push(numString);
-    console.log(numArray);
-    newDisplay = numArray.join('');
-    setDisplay(newDisplay);
+    var numString = this.innerText;
+    if (typeof numArray === 'number'){
+      parseFloat(numString);
+      numArray2.push(numString);
+      console.log(numArray2);
+      newDisplay = numArray2.join('');
+      setDisplay(newDisplay);
+      console.log(numArray2);
+      console.log(numArray);
+    }
+    else{
+      parseFloat(numString);
+      numArray.push(numString);
+      console.log(numArray);
+      newDisplay = numArray.join('');
+      setDisplay(newDisplay);
+}
   });
   document.getElementById("eight").addEventListener('click', function(){
-  var numString = this.innerText;
-    parseFloat(numString);
-    numArray.push(numString);
-    console.log(numArray);
-    newDisplay = numArray.join('');
-    setDisplay(newDisplay);
+    var numString = this.innerText;
+    if (typeof numArray === 'number'){
+      parseFloat(numString);
+      numArray2.push(numString);
+      console.log(numArray2);
+      newDisplay = numArray2.join('');
+      setDisplay(newDisplay);
+      console.log(numArray2);
+      console.log(numArray);
+    }
+    else{
+      parseFloat(numString);
+      numArray.push(numString);
+      console.log(numArray);
+      newDisplay = numArray.join('');
+      setDisplay(newDisplay);
+}
   });
     document.getElementById("nine").addEventListener('click', function(){
-  var numString = this.innerText;
-    parseFloat(numString);
-    numArray.push(numString);
-    console.log(numArray);
-    newDisplay = numArray.join('');
-    setDisplay(newDisplay);
+    var numString = this.innerText;
+    if (typeof numArray === 'number'){
+      parseFloat(numString);
+      numArray2.push(numString);
+      console.log(numArray2);
+      newDisplay = numArray2.join('');
+      setDisplay(newDisplay);
+      console.log(numArray2);
+      console.log(numArray);
+    }
+    else{
+      parseFloat(numString);
+      numArray.push(numString);
+      console.log(numArray);
+      newDisplay = numArray.join('');
+      setDisplay(newDisplay);
+}
   });
   document.getElementById("zero").addEventListener('click', function(){
-  var numString = this.innerText;
-    parseFloat(numString);
-    numArray.push(numString);
-    console.log(numArray);
-    newDisplay = numArray.join('');
-    setDisplay(newDisplay);
+    var numString = this.innerText;
+    if (typeof numArray === 'number'){
+      parseFloat(numString);
+      numArray2.push(numString);
+      console.log(numArray2);
+      newDisplay = numArray2.join('');
+      setDisplay(newDisplay);
+      console.log(numArray2);
+      console.log(numArray);
+    }
+    else{
+      parseFloat(numString);
+      numArray.push(numString);
+      console.log(numArray);
+      newDisplay = numArray.join('');
+      setDisplay(newDisplay);
+}
   });
   document.getElementById("doubleZero").addEventListener('click', function(){
-  var numString = this.innerText;
-    parseFloat(numString);
-    numArray.push(numString);
-    console.log(numArray);
-    newDisplay = numArray.join('');
-    setDisplay(newDisplay);
+    var numString = this.innerText;
+    if (typeof numArray === 'number'){
+      parseFloat(numString);
+      numArray2.push(numString);
+      console.log(numArray2);
+      newDisplay = numArray2.join('');
+      setDisplay(newDisplay);
+      console.log(numArray2);
+      console.log(numArray);
+    }
+    else{
+      parseFloat(numString);
+      numArray.push(numString);
+      console.log(numArray);
+      newDisplay = numArray.join('');
+      setDisplay(newDisplay);
+}
   });
   document.getElementById("clear").addEventListener('click', function(){
     var newDisplay = 0;
+    var workingNum = 0;
+    numArray = [];
+    numArray2 = [];
     setDisplay(newDisplay);
   });
   document.getElementById("dot").addEventListener('click', function(){
@@ -153,7 +264,86 @@ function init(){
     var newDisplay = newDisplay.concat(newDot);
     setDisplay(newDisplay);
   });
+document.getElementById("add").addEventListener('click', function(){
+    var newNum = numArray.toString();
+    var newestNum = newNum.replace(/,/g, '');
+    var workingNum = parseInt(newestNum);
+    console.log(workingNum);
+    calculatorModule.memory = workingNum;
+    var addition = workingNum + "+";
+    console.log(addition);
+    numArray = workingNum;
+    // if statement if (numArray.isnumber();)
+    console.log(workingNum);
+    return setDisplay(addition);
+    // calculatorModule.add(calculatorModule.memory);
+    // var numArray = 0;
+    //setDisplay(newDisplay);
+  });
+document.getElementById("subtract").addEventListener('click', function(){
+    var newNum = numArray.toString();
+    var newestNum = newNum.replace(/,/g, '');
+    var workingNum = parseInt(newestNum);
+    console.log(workingNum);
+    calculatorModule.memory = workingNum;
+    sub = workingNum + "-";
+    console.log(sub);
+    numArray = workingNum;
+    // if statement if (numArray.isnumber();)
+    console.log(workingNum);
+    return setDisplay(sub);
+    // calculatorModule.add(calculatorModule.memory);
+    // var numArray = 0;
+    //setDisplay(newDisplay);
+  });
+
+
+
+
+document.getElementById("equals").addEventListener('click', function(){
+
+  function sum (x, y){
+    return x + y;
+  }
+  function dec (x, y){
+    return x - y;
+  }
+
+  if(addition !== undefined){
+    var newNum2 = numArray2.toString();
+    var newestNum2 = newNum2.replace(/,/g, '');
+    var workingNum2 = parseInt(newestNum2);
+    calculatorModule.memory = workingNum2;
+    console.log(numArray);
+    console.log(workingNum2);
+    var answer = sum(numArray, workingNum2);
+    setDisplay(answer);
+    }
+
+  else if (sub.indexOf("-")>-1) {
+    var newNum2 = numArray2.toString();
+    var newestNum2 = newNum2.replace(/,/g, '');
+    var workingNum2 = parseInt(newestNum2);
+    calculatorModule.memory = workingNum2;
+    console.log(numArray);
+    console.log(workingNum2);
+    var answer = dec(numArray, workingNum2);
+    setDisplay(answer);
+    }
+
+    });
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -163,4 +353,3 @@ document.addEventListener('DOMContentLoaded', function(){
   init();
 });
 
-//var calculationFunctions = require("./calculator.js");

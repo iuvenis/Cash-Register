@@ -1,6 +1,6 @@
 var calculatorModule = (function(){
-  var _memory = 0;
-  var _total = 0;
+  var memory = 0;
+  var total = 0;
   var calc = {
   };
 // Error throw function
@@ -10,58 +10,54 @@ var calculatorModule = (function(){
     }
   }
 //Begin Functions
-
-//   document.getElementById("doubleZero").addEventListener('click', function(){
-
-//     setDisplay(newDisplay);
-// });
-
 function load(x) {
     isNum(x);
-    _total = x;
-    return _total;
+    total = x;
+    return total;
   }
   function getTotal() {
-    return _total;
+    return total;
   }
   function add(x) {
     isNum(x);
-    _total += x;
-    return _total;
+    total += x;
+    return total;
   }
   function subtract(x){
     isNum(x);
-    _total -= x;
-    return _total;
+    total -= x;
+    return total;
   }
   function multiply(x) {
     isNum(x);
-    _total *= x;
-    return _total;
+    total *= x;
+    return total;
    }
    function divide(x) {
     isNum(x);
-    _total /= x;
-    return _total;
+    total /= x;
+    return total;
    }
   function recallMemory() {
-    return _memory;
+    return memory;
    }
   function saveMemory() {
-    _memory = _total;
-    return _memory;
+    memory = total;
+    return memory;
    }
   function clearMemory() {
-    _memory = 0;
-    return _memory;
+    memory = 0;
+    return memory;
    }
    function resetMemory() {
-    _total = _memory;
-    return _total;
+    total = memory;
+    return total;
    }
 
 //Return public keys
 return {
+          total : total,
+         memory : memory,
            load : load,
        getTotal : getTotal,
             add : add,
@@ -73,23 +69,7 @@ return {
     clearMemory : clearMemory,
     resetMemory : resetMemory
    };
-});
-
-module.exports = getTotal;
-module.exports = add;
-module.exports = subtract;
-module.exports = multiply;
-module.exports = divide;
-module.exports = recallMemory;
-module.exports = saveMemory;
-module.exports = clearMemory;
-module.exports = resetMemory;
-
-
-
-
-
-
+})();
 
 
 
