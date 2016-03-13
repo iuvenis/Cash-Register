@@ -1,355 +1,133 @@
-//<div id="Number" src=""></div>
-
-// document.getElementById( ~ * ~ * ~ * ~).innerText = " ~ * ARRAY OF WHATEVER * ~ ";
-// div id
-// if ~ * BUTTON CLICKED * ~  document.getElementById ~ * ID GIVEN TO FUNCTION * ~. src=" ~ * SAUCE * ~ "
-// document.getElementById("test").onclick = foo2;
-// ^^^^^^^^^^^
-// Accepts only functions, no strings
-
-//.onclick
-// each part as object string
-//
-    // IF ANOTHER NUMBER CLICKED MULTIPLY BY TEN AND ADD THAT NUMBER OR WAIT NAWWWWW
-    //PARSE THAT SHIEEEEET N
-    // FUCK UP SOME COMMAS
-    // ALSO USE SOME MODULAR EXPORTS MUTHA FUKKKA
-
-
-    //var twoPlacedFloat = parseFloat(yourString).toFixed(2)
-
-
-// function numTaker(){
-//       parseFloat(numString);
-//       numArray.push(numString);
-//       console.log(numArray);
-//       newDisplay = numArray.join('');
-//       setDisplay(newDisplay);
-//   }
-
-
-
-
-
-var newDisplay = 0;
-var numArray = [];
-var numArray2 = [];
-
-function setDisplay(newDisplay){
-  document.getElementById("display").innerHTML = newDisplay;
+var newDisplay = 0.00; //"screen" display
+function setDisplay(newDisplay) {
+    document.getElementById("display").innerHTML = newDisplay;
 }
 
-function init(){
-  var newDisplay = 0;
-  var numArray = [];
+function init() {
+    var clickReturn = document.getElementsByClassName('clickable');
+    var firstArray = []; // array before operator
+    var secondArray = []; //Array after operator
+    var numString = "";
 
-  document.getElementById("one").addEventListener('click', function(){
-    var numString = this.innerText;
-    if (typeof numArray === 'number'){
-      parseFloat(numString);
-      numArray2.push(numString);
-      console.log(numArray2);
-      newDisplay = numArray2.join('');
-      setDisplay(newDisplay);
-      console.log(numArray2);
-      console.log(numArray);
-    }
-    else{
-      parseFloat(numString);
-      numArray.push(numString);
-      console.log(numArray);
-      newDisplay = numArray.join('');
-      setDisplay(newDisplay);
-}
-  });
-  document.getElementById("two").addEventListener('click', function(){
-    var numString = this.innerText;
-    if (typeof numArray === 'number'){
-      parseFloat(numString);
-      numArray2.push(numString);
-      console.log(numArray2);
-      newDisplay = numArray2.join('');
-      setDisplay(newDisplay);
-      console.log(numArray2);
-      console.log(numArray);
-    }
-    else{
-      parseFloat(numString);
-      numArray.push(numString);
-      console.log(numArray);
-      newDisplay = numArray.join('');
-      setDisplay(newDisplay);
-}
-  });
-  document.getElementById("three").addEventListener('click', function(){
-    var numString = this.innerText;
-    if (typeof numArray === 'number'){
-      parseFloat(numString);
-      numArray2.push(numString);
-      console.log(numArray2);
-      newDisplay = numArray2.join('');
-      setDisplay(newDisplay);
-      console.log(numArray2);
-      console.log(numArray);
-    }
-    else{
-      parseFloat(numString);
-      numArray.push(numString);
-      console.log(numArray);
-      newDisplay = numArray.join('');
-      setDisplay(newDisplay);
-}
-  });
-  document.getElementById("four").addEventListener('click', function(){
-    var numString = this.innerText;
-    if (typeof numArray === 'number'){
-      parseFloat(numString);
-      numArray2.push(numString);
-      console.log(numArray2);
-      newDisplay = numArray2.join('');
-      setDisplay(newDisplay);
-      console.log(numArray2);
-      console.log(numArray);
-    }
-    else{
-      parseFloat(numString);
-      numArray.push(numString);
-      console.log(numArray);
-      newDisplay = numArray.join('');
-      setDisplay(newDisplay);
-}
-  });
-  document.getElementById("five").addEventListener('click', function(){
-    var numString = this.innerText;
-    if (typeof numArray === 'number'){
-      parseFloat(numString);
-      numArray2.push(numString);
-      console.log(numArray2);
-      newDisplay = numArray2.join('');
-      setDisplay(newDisplay);
-      console.log(numArray2);
-      console.log(numArray);
-    }
-    else{
-      parseFloat(numString);
-      numArray.push(numString);
-      console.log(numArray);
-      newDisplay = numArray.join('');
-      setDisplay(newDisplay);
-}
-  });
-  document.getElementById("six").addEventListener('click', function(){
-    var numString = this.innerText;
-    if (typeof numArray === 'number'){
-      parseFloat(numString);
-      numArray2.push(numString);
-      console.log(numArray2);
-      newDisplay = numArray2.join('');
-      setDisplay(newDisplay);
-      console.log(numArray2);
-      console.log(numArray);
-    }
-    else{
-      parseFloat(numString);
-      numArray.push(numString);
-      console.log(numArray);
-      newDisplay = numArray.join('');
-      setDisplay(newDisplay);
-}
-  });
-  document.getElementById("seven").addEventListener('click', function(){
-    var numString = this.innerText;
-    if (typeof numArray === 'number'){
-      parseFloat(numString);
-      numArray2.push(numString);
-      console.log(numArray2);
-      newDisplay = numArray2.join('');
-      setDisplay(newDisplay);
-      console.log(numArray2);
-      console.log(numArray);
-    }
-    else{
-      parseFloat(numString);
-      numArray.push(numString);
-      console.log(numArray);
-      newDisplay = numArray.join('');
-      setDisplay(newDisplay);
-}
-  });
-  document.getElementById("eight").addEventListener('click', function(){
-    var numString = this.innerText;
-    if (typeof numArray === 'number'){
-      parseFloat(numString);
-      numArray2.push(numString);
-      console.log(numArray2);
-      newDisplay = numArray2.join('');
-      setDisplay(newDisplay);
-      console.log(numArray2);
-      console.log(numArray);
-    }
-    else{
-      parseFloat(numString);
-      numArray.push(numString);
-      console.log(numArray);
-      newDisplay = numArray.join('');
-      setDisplay(newDisplay);
-}
-  });
-    document.getElementById("nine").addEventListener('click', function(){
-    var numString = this.innerText;
-    if (typeof numArray === 'number'){
-      parseFloat(numString);
-      numArray2.push(numString);
-      console.log(numArray2);
-      newDisplay = numArray2.join('');
-      setDisplay(newDisplay);
-      console.log(numArray2);
-      console.log(numArray);
-    }
-    else{
-      parseFloat(numString);
-      numArray.push(numString);
-      console.log(numArray);
-      newDisplay = numArray.join('');
-      setDisplay(newDisplay);
-}
-  });
-  document.getElementById("zero").addEventListener('click', function(){
-    var numString = this.innerText;
-    if (typeof numArray === 'number'){
-      parseFloat(numString);
-      numArray2.push(numString);
-      console.log(numArray2);
-      newDisplay = numArray2.join('');
-      setDisplay(newDisplay);
-      console.log(numArray2);
-      console.log(numArray);
-    }
-    else{
-      parseFloat(numString);
-      numArray.push(numString);
-      console.log(numArray);
-      newDisplay = numArray.join('');
-      setDisplay(newDisplay);
-}
-  });
-  document.getElementById("doubleZero").addEventListener('click', function(){
-    var numString = this.innerText;
-    if (typeof numArray === 'number'){
-      parseFloat(numString);
-      numArray2.push(numString);
-      console.log(numArray2);
-      newDisplay = numArray2.join('');
-      setDisplay(newDisplay);
-      console.log(numArray2);
-      console.log(numArray);
-    }
-    else{
-      parseFloat(numString);
-      numArray.push(numString);
-      console.log(numArray);
-      newDisplay = numArray.join('');
-      setDisplay(newDisplay);
-}
-  });
-  document.getElementById("clear").addEventListener('click', function(){
-    var newDisplay = 0;
-    var workingNum = 0;
-    numArray = [];
-    numArray2 = [];
-    setDisplay(newDisplay);
-  });
-  document.getElementById("dot").addEventListener('click', function(){
-    var newDot = ".";
-    var newDisplay = newDisplay.concat(newDot);
-    setDisplay(newDisplay);
-  });
-document.getElementById("add").addEventListener('click', function(){
-    var newNum = numArray.toString();
-    var newestNum = newNum.replace(/,/g, '');
-    var workingNum = parseInt(newestNum);
-    console.log(workingNum);
-    calculatorModule.memory = workingNum;
-    var addition = workingNum + "+";
-    console.log(addition);
-    numArray = workingNum;
-    // if statement if (numArray.isnumber();)
-    console.log(workingNum);
-    return setDisplay(addition);
-    // calculatorModule.add(calculatorModule.memory);
-    // var numArray = 0;
-    //setDisplay(newDisplay);
-  });
-document.getElementById("subtract").addEventListener('click', function(){
-    var newNum = numArray.toString();
-    var newestNum = newNum.replace(/,/g, '');
-    var workingNum = parseInt(newestNum);
-    console.log(workingNum);
-    calculatorModule.memory = workingNum;
-    sub = workingNum + "-";
-    console.log(sub);
-    numArray = workingNum;
-    // if statement if (numArray.isnumber();)
-    console.log(workingNum);
-    return setDisplay(sub);
-    // calculatorModule.add(calculatorModule.memory);
-    // var numArray = 0;
-    //setDisplay(newDisplay);
-  });
+    var operatorControl ={
+      adding : "",
+      subtracting : "",
+      dividing : "",
+      multiplying : ""
+    };
+    stringTakerNumbaMaker = function() {
+        if (typeof firstArray === 'number') {
+            parseFloat(numString);
+            secondArray.push(numString);
+            newDisplay = secondArray.join('');
+            setDisplay(newDisplay);
+            console.log(firstArray);
+            console.log(secondArray);
+        } else {
+            parseFloat(numString);
+            firstArray.push(numString);
+            newDisplay = firstArray.join('');
+            setDisplay(newDisplay);
+            console.log(firstArray);
+            console.log(secondArray);
+        }
+    };
 
-
-
-
-document.getElementById("equals").addEventListener('click', function(){
-
-  function sum (x, y){
-    return x + y;
-  }
-  function dec (x, y){
-    return x - y;
-  }
-
-  if(addition !== undefined){
-    var newNum2 = numArray2.toString();
-    var newestNum2 = newNum2.replace(/,/g, '');
-    var workingNum2 = parseInt(newestNum2);
-    calculatorModule.memory = workingNum2;
-    console.log(numArray);
-    console.log(workingNum2);
-    var answer = sum(numArray, workingNum2);
-    setDisplay(answer);
+    for (var i = 0; i < clickReturn.length; i++) {
+        clickReturn[i].addEventListener('click', function(event) {
+            numString = (event.target.innerHTML);
+            stringTakerNumbaMaker();
+        });
     }
+    document.getElementById("clear").addEventListener('click', function() {
+        newDisplay = 0;
+        answer = 0;
+        firstArray = [];
+        numArray2 = [];
+        setDisplay(newDisplay);
+    });
+    document.getElementById("add").addEventListener('click', function addItUp() {
+        var newNum = firstArray.toString();
+        calculatorModule.memory = Number(newNum.replace(/,/g, ''));
+        operatorControl.adding = calculatorModule.memory + " " + "+";
+        firstArray = calculatorModule.memory;
+        setDisplay(operatorControl.adding);
+        return {
+            adding: operatorControl.adding,
+        };
+    });
 
-  else if (sub.indexOf("-")>-1) {
-    var newNum2 = numArray2.toString();
-    var newestNum2 = newNum2.replace(/,/g, '');
-    var workingNum2 = parseInt(newestNum2);
-    calculatorModule.memory = workingNum2;
-    console.log(numArray);
-    console.log(workingNum2);
-    var answer = dec(numArray, workingNum2);
-    setDisplay(answer);
-    }
+    document.getElementById("subtract").addEventListener('click', function subItUp() {
+        var newNum = firstArray.toString();
+        calculatorModule.memory = Number(newNum.replace(/,/g, ''));
+        operatorControl.subtracting = calculatorModule.memory + " " + "-";
+        firstArray = calculatorModule.memory;
+        setDisplay(operatorControl.subtracting);
+        return {
+            subtracting : operatorControl.subtracting,
+        };
+    });
+    document.getElementById("divide").addEventListener('click', function divItUp() {
+        var newNum = firstArray.toString();
+        calculatorModule.memory = Number(newNum.replace(/,/g, ''));
+        operatorControl.dividing = calculatorModule.memory + " " + "/";
+        firstArray = calculatorModule.memory;
+        setDisplay(operatorControl.dividing);
+        return {
+            dividing: operatorControl.dividing,
+        };
+    });
 
+    document.getElementById("multiply").addEventListener('click', function multIt() {
+        var newNum = firstArray.toString();
+        calculatorModule.memory = Number(newNum.replace(/,/g, ''));
+        operatorControl.multiplying = calculatorModule.memory + " " + "*";
+        firstArray = calculatorModule.memory;
+        setDisplay(operatorControl.multiplying);
+        return {
+            multiplying: operatorControl.multiplying,
+        };
+    });
+
+    document.getElementById("equals").addEventListener('click', function() {
+
+        var newNum2;
+        var answer;
+
+        equalsPt1 = function() {
+            newNum2 = secondArray.toString();
+            newNum2 = Number(newNum2.replace(/,/g, ''));
+        };
+        equalsPt2 = function() {
+            setDisplay(answer);
+            calculatorModule.memory = answer;
+            answer = 0;
+            secondArray = [];
+        };
+
+        if (operatorControl.adding) {
+            equalsPt1();
+            answer = calculatorModule.sum(calculatorModule.memory, newNum2).toFixed(2);
+            equalsPt2();
+            operatorControl.adding = "";
+        } else if (operatorControl.subtracting) {
+            equalsPt1();
+            answer = calculatorModule.decrease(calculatorModule.memory, newNum2).toFixed(2);
+            equalsPt2();
+            operatorControl.subtracting = "";
+        } else if (operatorControl.dividing) {
+            equalsPt1();
+            answer = calculatorModule.division(calculatorModule.memory, newNum2).toFixed(2);
+            equalsPt2();
+            operatorControl.dividing = "";
+        } else if (operatorControl.multiplying) {
+            equalsPt1();
+            answer = calculatorModule.multiplication(calculatorModule.memory, newNum2).toFixed(2);
+            equalsPt2();
+            operatorControl.multiplying = "";
+        }
     });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function(){
-  init();
+document.addEventListener('DOMContentLoaded', function() {
+    init();
 });
-
