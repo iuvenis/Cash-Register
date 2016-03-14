@@ -1,4 +1,4 @@
-var newDisplay = 0.00; //"screen" display
+var newDisplay = 0; //"screen" display
 function setDisplay(newDisplay) {
     document.getElementById("display").innerHTML = newDisplay;
 }
@@ -8,13 +8,13 @@ function init() {
     var firstArray = []; // array before operator
     var secondArray = []; //Array after operator
     var numString = "";
-
     var operatorControl ={
       adding : "",
       subtracting : "",
       dividing : "",
       multiplying : ""
     };
+
     stringTakerNumbaMaker = function() {
         if (typeof firstArray === 'number') {
             parseFloat(numString);
@@ -91,38 +91,38 @@ function init() {
 
     document.getElementById("equals").addEventListener('click', function() {
 
-        var newNum2;
+        var numberAfterOperator;
         var answer;
 
         equalsPt1 = function() {
-            newNum2 = secondArray.toString();
-            newNum2 = Number(newNum2.replace(/,/g, ''));
+            numberAfterOperator = secondArray.toString();
+            numberAfterOperator = Number(numberAfterOperator.replace(/,/g, ''));
         };
         equalsPt2 = function() {
             setDisplay(answer);
-            calculatorModule.memory = answer;
+            firstArray=answer;
             answer = 0;
             secondArray = [];
         };
 
         if (operatorControl.adding) {
             equalsPt1();
-            answer = calculatorModule.sum(calculatorModule.memory, newNum2).toFixed(2);
+            answer = calculatorModule.sum(calculatorModule.memory, numberAfterOperator).toFixed(2);
             equalsPt2();
             operatorControl.adding = "";
         } else if (operatorControl.subtracting) {
             equalsPt1();
-            answer = calculatorModule.decrease(calculatorModule.memory, newNum2).toFixed(2);
+            answer = calculatorModule.decrease(calculatorModule.memory, numberAfterOperator).toFixed(2);
             equalsPt2();
             operatorControl.subtracting = "";
         } else if (operatorControl.dividing) {
             equalsPt1();
-            answer = calculatorModule.division(calculatorModule.memory, newNum2).toFixed(2);
+            answer = calculatorModule.division(calculatorModule.memory, numberAfterOperator).toFixed(2);
             equalsPt2();
             operatorControl.dividing = "";
         } else if (operatorControl.multiplying) {
             equalsPt1();
-            answer = calculatorModule.multiplication(calculatorModule.memory, newNum2).toFixed(2);
+            answer = calculatorModule.multiplication(calculatorModule.memory, numberAfterOperator).toFixed(2);
             equalsPt2();
             operatorControl.multiplying = "";
         }
