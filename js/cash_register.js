@@ -24,15 +24,11 @@ function init() {
             secondArray.push(numString);
             newDisplay = secondArray.join('');
             setDisplay(newDisplay);
-            console.log(firstArray);
-            console.log(secondArray);
         } else {
             parseFloat(numString);
             firstArray.push(numString);
             newDisplay = firstArray.join('');
             setDisplay(newDisplay);
-            console.log(firstArray);
-            console.log(secondArray);
         }
     };
 
@@ -117,7 +113,6 @@ isNumber = function() {
 document.getElementById("deposit").addEventListener('click', function multIt() {
         isNumber();
         calculatorModule.saveMemory = newDisplay;
-        console.log(calculatorModule.saveMemory);
         newDisplay = 0.00;
         firstArray=[];
         answer = 0;
@@ -126,7 +121,6 @@ document.getElementById("deposit").addEventListener('click', function multIt() {
     });
 document.getElementById("getBalance").addEventListener('click', function multIt() {
         newDisplay = Number(calculatorModule.saveMemory).toFixed(2);
-        console.log(calculatorModule.saveMemory);
         firstArray=[];
         answer = 0;
         secondArray = [];
